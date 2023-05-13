@@ -18,12 +18,42 @@
     font-family: poppins;
   }
 
+  :root {
+    --primary-color: #fe2136;
+    --background-color: #1b1b1b;
+    --text-color: #fff;
+    --gray-color: #a3a3a3;
+  }
+
+  
   body {
-    background-color: #1b1b1b;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: var(--background-color);
     width: 100vw;
     height: 100vh;
 }
 
+.light-mode {
+  --primary-color: #fe2136;
+  --background-color: #777676;
+  --text-color: #.212529;
+  --gray-color: rgb(36, 36, 36);
+}
+
+.tlm button {
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: poppins;
+  font-size: 15px;
+  border-color: transparent;
+  position: absolute;
+  top: 95%;
+}
+
+.tlm img {
+  height: 70px;
+  width: 70px;
+}
 
 .container {
     display: flex;
@@ -36,7 +66,7 @@
 .container h1 {
     font-family: poppins, cursive;
     font-size: 48px;
-    color: #fe2136;
+    color: var(--primary-color);
     position: absolute;
     top: 50%; 
 }
@@ -45,7 +75,7 @@
     border-radius: 50%;
     height: 250px;
     width: 250px;
-    border-color:#fe2136;
+    border-color:var(--primary-color);
     border-style: solid;
     position: absolute;
     top: 10%; 
@@ -65,7 +95,7 @@ a {
 .navigate li {
     margin: 0 90px;
   list-style: none;
-    color: #fff;
+    color: var(--text-color);
     font-family: "comfortaa", cursive;
     transition-duration: 1s;
     transition-property: color;
@@ -74,7 +104,7 @@ a {
 }
 
 .navigate li:hover {
-    color:#fe2136;
+    color:var(--primary-color);
 }
 
 .desc {
@@ -85,7 +115,7 @@ a {
 }
 
 .desc p {
-    color: rgb(177, 177, 177);
+  color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -93,7 +123,7 @@ a {
 }
 
 .desc footer {
-    color: #a3a3a3;
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -104,7 +134,7 @@ a {
 }
 
 .desc footer:hover {
-    color: #ff4b5d;
+    color: var(--primary-color);
 }
 
 
@@ -161,7 +191,7 @@ a {
 .navigate li {
     margin: 0 30px;
   list-style: none;
-    color: #fff;
+    color: var(--text-color);
     font-family: "comfortaa", cursive;
     transition-duration: 1s;
     transition-property: color;
@@ -170,7 +200,7 @@ a {
 }
 
 .navigate li:hover {
-    color:#fe2136;
+    color:var(--primary-color);
 }
 
 .desc {
@@ -180,7 +210,7 @@ a {
 }
 
 .desc p {
-    color: rgb(177, 177, 177);
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -188,7 +218,7 @@ a {
 }
 
 .desc footer {
-    color: #a3a3a3;
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -199,7 +229,7 @@ a {
 }
 
 .desc footer:hover {
-    color: #ff4b5d;
+    color: var(--primary-color);
 }
   }
   
@@ -238,7 +268,7 @@ a {
 .navigate li {
     margin: 0 10px;
   list-style: none;
-    color: #fff;
+    color: var(--text-color);
     font-family: "comfortaa", cursive;
     transition-duration: 1s;
     transition-property: color;
@@ -247,7 +277,7 @@ a {
 }
 
 .navigate li:hover {
-    color:#fe2136;
+    color:var(--primary-color);
 }
 
 .desc {
@@ -257,7 +287,7 @@ a {
 }
 
 .desc p {
-    color: rgb(177, 177, 177);
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -265,7 +295,7 @@ a {
 }
 
 .desc footer {
-    color: #a3a3a3;
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -276,7 +306,7 @@ a {
 }
 
 .desc footer:hover {
-    color: #ff4b5d;
+    color: var(--primary-color);
 }
   }
   
@@ -320,7 +350,7 @@ a {
 .navigate li {
     margin: 0 10px;
   list-style: none;
-    color: #fff;
+    color: var(--text-color);
     font-family: "comfortaa", cursive;
     transition-duration: 1s;
     transition-property: color;
@@ -329,7 +359,7 @@ a {
 }
 
 .navigate li:hover {
-    color:#fe2136;
+    color:var(--primary-color);
 }
 
 .desc {
@@ -339,7 +369,7 @@ a {
 }
 
 .desc p {
-    color: rgb(177, 177, 177);
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -347,7 +377,7 @@ a {
 }
 
 .desc footer {
-    color: #a3a3a3;
+    color: var(--text-color);
     font-family: poppins;
     text-align: center;
     position: absolute;
@@ -358,7 +388,7 @@ a {
 }
 
 .desc footer:hover {
-    color: #ff4b5d;
+    color: var(--primary-color);
 }
   }
   
@@ -433,7 +463,7 @@ a {
     .navigate li {
       margin: 0 10px;
     list-style: none;
-      color: #fff;
+      color: var(--text-color);
       font-family: "comfortaa", cursive;
       transition-duration: 1s;
       transition-property: color;
@@ -442,7 +472,7 @@ a {
     }
     
     .navigate li:hover {
-      color:#fe2136;
+      color:var(--primary-color);
     }
     
     .desc {
@@ -452,7 +482,7 @@ a {
     }
     
     .desc p {
-      color: rgb(177, 177, 177);
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -460,7 +490,7 @@ a {
     }
     
     .desc footer {
-      color: #a3a3a3;
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -471,7 +501,7 @@ a {
     }
     
     .desc footer:hover {
-      color: #ff4b5d;
+      color: var(--primary-color);
     }
   
   }
@@ -508,7 +538,7 @@ a {
     .navigate li {
       margin: 0 10px;
     list-style: none;
-      color: #fff;
+      color: var(--text-color);
       font-family: "comfortaa", cursive;
       transition-duration: 1s;
       transition-property: color;
@@ -517,7 +547,7 @@ a {
     }
     
     .navigate li:hover {
-      color:#fe2136;
+      color:var(--primary-color);
     }
     
     .desc {
@@ -527,7 +557,7 @@ a {
     }
     
     .desc p {
-      color: rgb(177, 177, 177);
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -536,7 +566,7 @@ a {
     }
     
     .desc footer {
-      color: #a3a3a3;
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -547,7 +577,7 @@ a {
     }
     
     .desc footer:hover {
-      color: #ff4b5d;
+      color: var(--primary-color);
     }
   
   }
@@ -587,7 +617,7 @@ a {
     .navigate li {
       margin: 0 40px;
     list-style: none;
-      color: #fff;
+      color: var(--text-color);
       font-family: "comfortaa", cursive;
       transition-duration: 1s;
       transition-property: color;
@@ -597,7 +627,7 @@ a {
     }
     
     .navigate li:hover {
-      color:#fe2136;
+      color:var(--primary-color);
     }
     
     .desc {
@@ -607,7 +637,7 @@ a {
     }
     
     .desc p {
-      color: rgb(177, 177, 177);
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -617,7 +647,7 @@ a {
     
     .desc footer {
       font-size: 40px;
-      color: #a3a3a3;
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -628,7 +658,7 @@ a {
     }
     
     .desc footer:hover {
-      color: #ff4b5d;
+      color: var(--primary-color);
     }
   
   }
@@ -665,7 +695,7 @@ a {
     .navigate li {
       margin: 0 10px;
     list-style: none;
-      color: #fff;
+      color: var(--text-color);
       font-family: "comfortaa", cursive;
       transition-duration: 1s;
       transition-property: color;
@@ -674,7 +704,7 @@ a {
     }
     
     .navigate li:hover {
-      color:#fe2136;
+      color:var(--primary-color);
     }
     
     .desc {
@@ -684,7 +714,7 @@ a {
     }
     
     .desc p {
-      color: rgb(177, 177, 177);
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -692,7 +722,7 @@ a {
     }
     
     .desc footer {
-      color: #a3a3a3;
+      color: var(--text-color);
       font-family: poppins;
       text-align: center;
       position: absolute;
@@ -703,7 +733,7 @@ a {
     }
     
     .desc footer:hover {
-      color: #ff4b5d;
+      color: var(--primary-color);
     }
   
   
