@@ -1,8 +1,8 @@
-var userAgent = navigator.userAgent.toLowerCase();
+/*var userAgent = navigator.userAgent.toLowerCase();
 
 if (userAgent.match(/mobile|iphone|ipad|android/)) {
   document.body.style.backgroundImage = 'url(images/kiaheartonfire.png)';
-}
+}*/
 // Function to toggle the active state of the navigation menu
 function toggleNav() {
     var nav = document.querySelector('.nav');
