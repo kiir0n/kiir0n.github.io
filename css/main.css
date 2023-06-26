@@ -4,8 +4,10 @@
 }
 
 body {
-    background-image: url(../images/jared-brashier-6WPcf5D1XdA-unsplash.jpg);
-    background-size: auto;
+    background-image: url(../images/Snapchat-1723088056.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     max-height: 100vh;
 }
 
